@@ -11,6 +11,12 @@ void main() {
     rabbitCount = calculateRabbits(years);
     print("After $years years:\t $rabbitCount animals");
   }
+
+  int daysInWeek = 7;
+  final fdaysInYear = daysInWeek * 52;
+  // const DAYSINYEAR = daysInWeek * 52;
+  daysInWeek = 8;
+  print("fdaysInYear: $fdaysInYear"); //daysInWeek still 7
 }
 
 int calculateRabbits(int years) {
